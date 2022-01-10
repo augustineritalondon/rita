@@ -1,0 +1,129 @@
+nav{
+    color: #fff;
+}
+
+nav span{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.logo{
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+}
+
+nav .navbar .menu_list ul li{
+    list-style: none;
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+.navbar{
+    padding: 0;
+}
+
+.navbar-mobile{
+    display: none;
+}
+
+.navbar .menu_list ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .menu_list ul li .active{
+    color: #D5C455;
+    font-weight: 700;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #D5C455;
+}
+
+.navbar .menu_list ul li a:hover{
+    color: #D5C455;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #D5C455;
+    animation: navlist 0.5s ease-in-out;
+}
+
+@keyframes navlist {
+    0%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar{
+        display: none;
+    }
+
+    .navbar-mobile{
+        display: block;
+    }
+
+    .navbar-mobile .navbar-mobile-style{
+        background: #121212;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        max-height: 100vh;
+        display: grid;
+        top: 0;
+        left: 0;
+        z-index: 3000;
+        transform: translateX(100%);
+        transition: all .5s ease-in-out;
+    }
+    .navbar-mobile .navbar-mobile-style.slide{
+        transform: translateX(0);
+    }
+    .navbar-mobile .navbar-mobile-style ul{
+        padding: 0;
+        text-align: center;
+        align-self: center;
+    }
+    .navbar-mobile .navbar-mobile-style ul li{
+        list-style: none;
+        margin: 40px auto;
+    }
+    .navbar-mobile .navbar-mobile-style ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Ubuntu', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .menu-icon{
+        color: #fff;
+        font-size: 25px;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        z-index: 2000;
+        text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.432);
+    }
+
+    .menu-bars{
+        top: 1px;
+    }
+
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+
+    nav span{
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-left: 10px;
+    }
+
+    
+}

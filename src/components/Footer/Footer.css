@@ -1,0 +1,70 @@
+/* CONTACT ME */
+.contact{
+    padding-top: 250px;
+    text-align: center;
+    position: relative;
+}
+
+.contact .contact_shape{
+    background-image: url(../../assets/images/Group35.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    position: absolute;
+    z-index: -1;
+}
+
+.contact p{
+    color: #fff;
+}
+
+.contact .contact-details p{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+.contact .contact-details p a{
+    color: #D5C455;
+}
+
+.contact ul{
+    padding: 0;
+    align-self: center;
+}
+
+.contact ul li{
+    list-style: none;
+    display: inline;
+}
+
+.contact ul li i{
+    font-size: 12px;
+    color: #C4C4C4;
+    border: 1px solid #C4C4C4;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.contact ul li .facebook{
+    padding: 10px 13px;
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+    padding-top: 180px;
+}
+
+footer hr{
+    height: 2px!important;
+    color: rgba(255, 255, 255, 0.6);
+    opacity: 1;
+}
+
+footer p{
+    font-size: 14px;
+    color: #fff;
+}
