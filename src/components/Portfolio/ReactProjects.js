@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import harvoxxschool from '../../assets/images/harvoxxschool.png'
 import rita from '../../assets/images/ritap.png'
+import templatepic from '../../assets/images/template.png'
 import './Style.css'
 
 const ReactProjects = () => {
@@ -62,6 +63,17 @@ const ReactProjects = () => {
                                 <h5 className='title'>Portfolio</h5>
                                 <p>My personal portfolio</p>
                                 <button><a href='http://ritalondon.herokuapp.com/' target='_blank'>View</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='col-lg-4 col-md-4 col-12 '>
+                        <div className='projects-card'>
+                            <a href='https://templateschool.netlify.app/' target='_blank'><img src={templatepic} /></a>
+                            <div className='description'>
+                                <h5 className='title'>Website template</h5>
+                                <p>A website template built using react</p>
+                                <button><a href='https://templateschool.netlify.app/' target='_blank'>View</a></button>
                             </div>
                         </div>
                     </div>

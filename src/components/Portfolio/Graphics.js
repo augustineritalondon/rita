@@ -3,7 +3,6 @@ import agi from '../../assets/images/agi-otto-logo.png'
 import flyer1 from '../../assets/images/flyer1.png'
 import flyer2 from '../../assets/images/flyer2.png'
 import card from '../../assets/images/card.png'
-import images from '../../assets/images/image'
 import Modal from './Modal'
 import './Style.css'
 
