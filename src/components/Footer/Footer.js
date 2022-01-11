@@ -20,14 +20,14 @@ const Footer = () => {
                         </p>
 
                         <div className='mt-5 contact-details'>
-                            <p>Email: <a href="#">augustineritalondon@gmail.com</a></p>
+                            <p>Email: <a href="mailto: augustineritalondon@gmail.com">augustineritalondon@gmail.com</a></p>
                             <p>Phone: +234 906 7598 578</p>
                             <div className='icons' style={{ margin: 0, padding: 0 }}>
                                 <ul className='mt-3'>
-                                    <li><a href='#' target='_blank'><i class="fab fa-facebook-f facebook"></i></a></li>
-                                    <li><a href='#' target='_blank'><i class="fab fa-twitter twitter"></i></a></li>
-                                    <li><a href='https://www.linkedin.com/in/rita-london-840361147/' target='_blank'><i class="fab fa-linkedin-in linkedin"></i></a></li>
-                                    <li><a href='https://github.com/augustineritalondon' target='_blank'><i class="fab fa-github github"></i></a></li>
+                                    <li><a href='/' target='_blank'><i class="fab fa-facebook-f facebook"></i></a></li>
+                                    <li><a href='/' target='_blank'><i class="fab fa-twitter twitter"></i></a></li>
+                                    <li><a href='https://www.linkedin.com/in/rita-london-840361147/' target='_blank' rel='opener'><i class="fab fa-linkedin-in linkedin"></i></a></li>
+                                    <li><a href='https://github.com/augustineritalondon' target='_blank' rel='opener'><i class="fab fa-github github"></i></a></li>
                                 </ul>
                             </div>
                         </div>

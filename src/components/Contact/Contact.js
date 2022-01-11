@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import './Contact.css'
-import BaseMap from '../Map'
+// import BaseMap from '../Map'
 import emailjs from '@emailjs/browser';
 import GoTo from '../Utils/GoTo';
 
@@ -29,7 +29,7 @@ const Contact = () => {
                     <h4>Contact Information</h4>
                     <div className='row mt-5'>
                         <div className='col-lg-4 col-md-6 col-12'>
-                            <p>Adress: 35 Rupkakwulusi Newlayout, Port Harcourt, RS, Nigeria.</p>
+                            <p>Adress: Port Harcourt, RS, Nigeria.</p>
                         </div>
                         <div className='col-lg-4 col-md-6 col-12'>
                             <p>Phone: <span>+234 906 7598 578</span></p>
@@ -38,7 +38,7 @@ const Contact = () => {
                             <p>Email: <span>augustineritalondon@gmail.com</span></p>
                         </div>
                         <div className='col-lg-4 col-md-6 col-12'>
-                            <p>Website: <span>rita.com</span></p>
+                            <p>Website: <span><a href='https://ritalondon.netlify.app/' style={{textDecoration: "none"}}>https://ritalondon.netlify.app/</a></span></p>
                         </div>
                     </div>
 
@@ -63,7 +63,7 @@ const Contact = () => {
                         </div>
                         <div className='col-lg-6 col-12'>
                             <div>
-                                <BaseMap />
+                                {/* <BaseMap /> */}
                             </div>
 
                         </div>

@@ -72,19 +72,23 @@ const About = () => {
                                 <Fade right>
                                     <h5>About Me</h5>
                                     <h3>A Web Developer & UI/UX Designer Based in Nigeria.</h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p>I am a creative Front-End Developer, experienced in providing high-impact web
+                                        solutions for diverse organizations. Proficient in HTML, CSS, jQuery, and JavaScript;
+                                        plus modern libraries and frameworks. I am skilled in designing, developing and testing multiple
+                                        web-based applications incorporating a range of technologies. Aspiring to combine broad
+                                        background with strong technical skills to excel as a Front-End Developer.
+                                    </p>
 
                                     <div className='about_contact'>
                                         <div className='row'>
                                             <div className='col-lg-6 col-md-6 col-12'>
                                                 <p><span>Name: </span>Rita London</p>
-                                                <p><span>Date of birth: </span>April 4, 2000</p>
                                                 <p><span>Address: </span>Port Harcourt, RS. Nigeria</p>
+                                                <p><span>Zip Code: </span>1000</p>
                                             </div>
                                             <div className='col-lg-6 col-md-6 col-12'>
-                                                <p><span>Zip Code: </span>1000</p>
                                                 <p><span>Email: </span>augustineritalondon@gmail.com</p>
-                                                <p><span>Email: </span>+234 906 7598 578</p>
+                                                <p><span>Phone: </span>+234 906 7598 578</p>
                                             </div>
                                         </div>
                                     </div>
@@ -104,20 +108,20 @@ const About = () => {
                         <div className='col-lg-4 col-md-4 col-12 mb-4'>
                             <div className='countCard'>
                                 {/* <h2 className='counter'>23</h2> */}
-                                <Count  duration={400} amount={23} />
+                                <Count  duration={500} amount={6} />
                                 <p>Total Projects</p>
                             </div>
                         </div>
                         <div className='col-lg-4 col-md-4 col-12 mb-4'>
                             <div className='countCard'>
                                 {/* <h2 className='counter'>11</h2> */}
-                                <Count  duration={400} amount={11} />
+                                <Count  duration={500} amount={3} />
                                 <p>On Going Projects</p>
                             </div>
                         </div>
                         <div className='col-lg-4 col-md-4 col-12 mb-4'>
                             <div className='countCard'>
-                                <h2 className='flex' style={{justifyContent: "center"}}><span><Count  duration={200} amount={60}/></span>%</h2>
+                                <h2 className='flex' style={{justifyContent: "center"}}><span><Count  duration={100} amount={85}/></span>%</h2>
                                 <p>Job Success</p>
                             </div>
                         </div>

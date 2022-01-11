@@ -111,7 +111,7 @@ const Home = () => {
                             <div className='aboutHeading'>
                                 <h1>About</h1>
                                 <Fade right>
-                                    <h3>H1! I'm Rita</h3>
+                                    <h3>Hi! I'm Rita</h3>
                                 </Fade>
                             </div>
                             <div className='aboutBody'>
