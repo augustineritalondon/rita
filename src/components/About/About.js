@@ -144,31 +144,31 @@ const About = () => {
                                     <h6>JavaScript</h6>
                                     <div class="skills-progress">
                                         <div class="skills-progress-bar javascript">
-                                            <span>70%</span>
+                                            {/* <span>70%</span> */}
                                         </div>
                                     </div>
                                 </div>
                                 <div class="skills-items">
                                     <h6>ReactJs</h6>
                                     <div class="skills-progress">
-                                        <div class="skills-progress-bar reactjs">
-                                            <span>74%</span>
+                                        <div class="skills-progress-bar javascript">
+                                            {/* <span>74%</span> */}
                                         </div>
                                     </div>
                                 </div>
                                 <div class="skills-items">
                                     <h6>Photoshop</h6>
                                     <div class="skills-progress">
-                                        <div class="skills-progress-bar photoshop">
-                                            <span>80%</span>
+                                        <div class="skills-progress-bar javascript">
+                                            {/* <span>80%</span> */}
                                         </div>
                                     </div>
                                 </div>
                                 <div class="skills-items">
                                     <h6>NodeJs</h6>
                                     <div class="skills-progress">
-                                        <div class="skills-progress-bar nodejs">
-                                            <span>45%</span>
+                                        <div class="skills-progress-bar javascript">
+                                            {/* <span>45%</span> */}
                                         </div>
                                     </div>
                                 </div>
@@ -177,32 +177,32 @@ const About = () => {
                                 <div class="skills-items">
                                     <h6>HTML</h6>
                                     <div class="skills-progress">
-                                        <div class="skills-progress-bar html">
-                                            <span>90%</span>
+                                        <div class="skills-progress-bar javascript">
+                                            {/* <span>90%</span> */}
                                         </div>
                                     </div>
                                 </div>
                                 <div class="skills-items">
                                     <h6>Angular</h6>
                                     <div class="skills-progress">
-                                        <div class="skills-progress-bar angular">
-                                            <span>60%</span>
+                                        <div class="skills-progress-bar javascript">
+                                            {/* <span>60%</span> */}
                                         </div>
                                     </div>
                                 </div>
                                 <div class="skills-items">
                                     <h6>Illustrator</h6>
                                     <div class="skills-progress">
-                                        <div class="skills-progress-bar react">
-                                            <span>80%</span>
+                                        <div class="skills-progress-bar javascript">
+                                            {/* <span>80%</span> */}
                                         </div>
                                     </div>
                                 </div>
                                 <div class="skills-items">
                                     <h6>SEO</h6>
                                     <div class="skills-progress">
-                                        <div class="skills-progress-bar seo">
-                                            <span>60%</span>
+                                        <div class="skills-progress-bar javascript">
+                                            {/* <span>60%</span> */}
                                         </div>
                                     </div>
                                 </div>
@@ -211,32 +211,32 @@ const About = () => {
                                 <div class="skills-items">
                                     <h6>CSS</h6>
                                     <div class="skills-progress">
-                                        <div class="skills-progress-bar css">
-                                            <span>90%</span>
+                                        <div class="skills-progress-bar javascript">
+                                            {/* <span>90%</span> */}
                                         </div>
                                     </div>
                                 </div>
                                 <div class="skills-items">
                                     <h6>Figma</h6>
                                     <div class="skills-progress">
-                                        <div class="skills-progress-bar figma">
-                                            <span>75%</span>
+                                        <div class="skills-progress-bar javascript">
+                                            {/* <span>75%</span> */}
                                         </div>
                                     </div>
                                 </div>
                                 <div class="skills-items">
                                     <h6>Bootstrap</h6>
                                     <div class="skills-progress">
-                                        <div class="skills-progress-bar bootstrap">
-                                            <span>85%</span>
+                                        <div class="skills-progress-bar javascript">
+                                            {/* <span>85%</span> */}
                                         </div>
                                     </div>
                                 </div>
                                 <div class="skills-items">
                                     <h6>GIT</h6>
                                     <div class="skills-progress">
-                                        <div class="skills-progress-bar git">
-                                            <span>70%</span>
+                                        <div class="skills-progress-bar javascript">
+                                            {/* <span>70%</span> */}
                                         </div>
                                     </div>
                                 </div>

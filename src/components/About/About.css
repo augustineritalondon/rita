@@ -135,7 +135,7 @@
 /* PROJECT BAR CONTENT */
 
 .javascript {
-	width: 75%;
+	width: 100%;
 }
 
 .html {
@@ -212,7 +212,7 @@
 }
 
 .tools .tools_slider .slider_item img{
-    width: 200px;
+    width: 150px;
     height: 100px;
     margin: 0 auto;
 }
