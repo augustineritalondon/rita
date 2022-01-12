@@ -14,7 +14,7 @@ const Angular = () => {
                             <div className='description'>
                                 <h5 className='title'>Ruby's Place</h5>
                                 <p>Online Restaurant Template.</p>
-                                <button><a href='https://school.hthub.com.ng'>View</a></button>
+                                <button><a href='http://rubysplace.herokuapp.com/'>View</a></button>
                             </div>
                         </div>
                     </div>
