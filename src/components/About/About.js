@@ -84,7 +84,7 @@ const About = () => {
                                             <div className='col-lg-6 col-md-6 col-12'>
                                                 <p><span>Name: </span>Rita London</p>
                                                 <p><span>Address: </span>Port Harcourt, RS. Nigeria</p>
-                                                <p><span>Zip Code: </span>1000</p>
+                                                <p><span>Zip Code: </span>500102</p>
                                             </div>
                                             <div className='col-lg-6 col-md-6 col-12'>
                                                 <p><span>Email: </span>augustineritalondon@gmail.com</p>
