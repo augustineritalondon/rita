@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Home.css'
 import '../../App.css'
 import image from '../../assets/images/rita.png'
-import aboutImage from '../../assets/images/beautifulrita3.jpg'
+import aboutImage from '../../assets/images/beautifulrita3.png'
 import { Link } from 'react-router-dom'
 import { ReactProjects, Angular, Ui, Graphics, Manipulation } from '../../components'
 import { Zoom, Fade } from 'react-reveal';
