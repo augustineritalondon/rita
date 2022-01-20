@@ -38,7 +38,7 @@ const Footer = () => {
             <footer>
                 <div className='r-container'>
                     <hr />
-                    <p>Designed with <i class="fas fa-heart" style={{ color: "red" }}></i> by Rita London</p>
+                    <p>Designed with <i class="fas fa-heart" style={{ color: "#808080" }}></i> by Rita London</p>
                 </div>
             </footer>
         </>
