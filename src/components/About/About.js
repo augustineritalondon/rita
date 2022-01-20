@@ -93,7 +93,7 @@ const About = () => {
                                         </div>
                                     </div>
 
-                                    <button className='mt-5'><a href={require('../../assets/AUGUSTINE.pdf')} target="_blank">Download CV</a></button>
+                                    {/* <button className='mt-5'><a href={require('../../assets/AUGUSTINE.pdf')} target="_blank">Download CV</a></button> */}
                                 </Fade>
 
                             </div>
@@ -108,22 +108,65 @@ const About = () => {
                         <div className='col-lg-4 col-md-4 col-12 mb-4'>
                             <div className='countCard'>
                                 {/* <h2 className='counter'>23</h2> */}
-                                <Count  duration={500} amount={6} />
+                                <Count duration={500} amount={6} />
                                 <p>Total Projects</p>
                             </div>
                         </div>
                         <div className='col-lg-4 col-md-4 col-12 mb-4'>
                             <div className='countCard'>
                                 {/* <h2 className='counter'>11</h2> */}
-                                <Count  duration={500} amount={3} />
+                                <Count duration={500} amount={3} />
                                 <p>On Going Projects</p>
                             </div>
                         </div>
                         <div className='col-lg-4 col-md-4 col-12 mb-4'>
                             <div className='countCard'>
-                                <h2 className='flex' style={{justifyContent: "center"}}><span><Count  duration={100} amount={85}/></span>%</h2>
+                                <h2 className='flex' style={{ justifyContent: "center" }}><span><Count duration={100} amount={85} /></span>%</h2>
                                 <p>Job Success</p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section className='experience'>
+                <div className='container-e'>
+                    <h3 style={{fontWeight: 300, fontSize: "32px", color: "#fff", paddingBottom: "25px"}}>Experience</h3>
+                    <div className='experience-content'>
+                        <div className='row'>
+                            <div className='col-8'><span style={{color:"#fff"}}>Web Developer </span> - Harvoxx Techhub  <br/>Port Harcourt, Nigeria.</div>
+                            <div className='col-4' style={{display:"flex", justifyContent:"right"}}>2021 - present</div>
+                        </div>
+                    </div>
+                    <div className='experience-content'>
+                        <div className='row'>
+                            <div className='col-8'><span style={{color:"#fff"}}>Freelance Web Developer </span>  <br/>Port Harcourt, Nigeria.</div>
+                            <div className='col-4' style={{display:"flex", justifyContent:"right"}}>2021</div>
+                        </div>
+                    </div>
+                    <div className='experience-content'>
+                        <div className='row'>
+                            <div className='col-8'><span style={{color:"#fff"}}>Web Manager </span> - De-Willex Global Limited  <br/>Lagos, Nigeria.</div>
+                            <div className='col-4' style={{display:"flex", justifyContent:"right"}}>2020 - 2021</div>
+                        </div>
+                    </div>
+                    <div className='experience-content'>
+                        <div className='row'>
+                            <div className='col-8'><span style={{color:"#fff"}}>Fronted Web Developer (Intern) </span> - CLE Engineering Nig. Ltd.  <br/>Port Harcourt, Nigeria.</div>
+                            <div className='col-4' style={{display:"flex", justifyContent:"right"}}>2017 - 2018</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className='experience'>
+                <div className='container-e'>
+                    <h3 style={{fontWeight: 300, fontSize: "32px", color: "#fff", paddingBottom: "25px"}}>Education</h3>
+                    <div className='experience-content'>
+                        <div className='row'>
+                            <div className='col-8'><span style={{color:"#fff"}}>Bachelor of Science in Computer Science </span> - All Nations University  <br/>Koforidua, Ghana.</div>
+                            <div className='col-4' style={{display:"flex", justifyContent:"right"}}>2015 - 2019</div>
                         </div>
                     </div>
                 </div>
