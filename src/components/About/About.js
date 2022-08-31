@@ -89,7 +89,7 @@ const About = () => {
                                         </div>
                                     </div>
 
-                                    {/* <button className='mt-5'><a href={require('../../assets/AUGUSTINE.pdf')} target="_blank">Download CV</a></button> */}
+                                    <button className='mt-5'><a href={require('../../assets/AUGUSTINE.pdf')} target="_blank">Download CV</a></button>
                                 </Fade>
 
                             </div>
