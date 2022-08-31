@@ -72,11 +72,7 @@ const About = () => {
                                 <Fade right>
                                     <h5>About Me</h5>
                                     <h3>A Web Developer & UI/UX Designer Based in Nigeria.</h3>
-                                    <p>I am a creative Front-End Developer, experienced in providing high-impact web
-                                        solutions for diverse organizations. Proficient in HTML, CSS, jQuery, and JavaScript;
-                                        plus modern libraries and frameworks. I am skilled in designing, developing and testing multiple
-                                        web-based applications incorporating a range of technologies. Aspiring to combine broad
-                                        background with strong technical skills to excel as a Front-End Developer.
+                                    <p>I am a very passionate Web Developer & Designer driven by quality & perfection. I am highly adaptive, culturally sensitive, and proactive. I love to spend my time finding realistic solutions for uncomfortable problems. I enjoy responsibility and accountability. Although I always strive to push myself past my limits, I strongly believe in the power of teamwork and base my efforts around working well with others as a part of my software development journey.
                                     </p>
 
                                     <div className='about_contact'>
@@ -108,7 +104,7 @@ const About = () => {
                         <div className='col-lg-4 col-md-4 col-12 mb-4'>
                             <div className='countCard'>
                                 {/* <h2 className='counter'>23</h2> */}
-                                <Count duration={500} amount={6} />
+                                <Count duration={500} amount={8} />
                                 <p>Total Projects</p>
                             </div>
                         </div>
@@ -135,8 +131,14 @@ const About = () => {
                     <h3 style={{fontWeight: 300, fontSize: "32px", color: "#fff", paddingBottom: "25px"}}>Experience</h3>
                     <div className='experience-content'>
                         <div className='row'>
+                            <div className='col-8'><span style={{color:"#fff"}}>Frontend Web Developer </span> - Techfaithful  <br/>Port Harcourt, Nigeria.</div>
+                            <div className='col-4' style={{display:"flex", justifyContent:"right"}}>2022 - present</div>
+                        </div>
+                    </div>
+                    <div className='experience-content'>
+                        <div className='row'>
                             <div className='col-8'><span style={{color:"#fff"}}>Web Developer </span> - Harvoxx Techhub  <br/>Port Harcourt, Nigeria.</div>
-                            <div className='col-4' style={{display:"flex", justifyContent:"right"}}>2021 - present</div>
+                            <div className='col-4' style={{display:"flex", justifyContent:"right"}}>2021 - 2022</div>
                         </div>
                     </div>
                     <div className='experience-content'>

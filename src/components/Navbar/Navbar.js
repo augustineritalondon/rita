@@ -22,7 +22,7 @@ const Navbar = () => {
                             <div className='menu_list'>
                                 <ul className='flex'>
                                     <li><NavLink to="/" activeClassName="active">Home</NavLink></li>
-                                    <li><NavLink to="/about" activeClassName="active">Resume</NavLink></li>
+                                    <li><NavLink to="/about" activeClassName="active">About Me</NavLink></li>
                                     <li><NavLink to="/services" activeClassName="active">Services</NavLink></li>
                                     <li><NavLink to="/port" activeClassName="active">portfolio</NavLink></li>
                                     <li><NavLink to="/contact" activeClassName="active">Contact</NavLink></li>

@@ -116,11 +116,7 @@ const Home = () => {
                             </div>
                             <div className='aboutBody'>
                                 <Fade right>
-                                    <p>I am a creative Front-End Developer, experienced in providing high-impact web
-                                        solutions for diverse organizations. Proficient in HTML, CSS, jQuery, and JavaScript;
-                                        plus modern libraries and frameworks. I am skilled in designing, developing and testing multiple
-                                        web-based applications incorporating a range of technologies. Aspiring to combine broad
-                                        background with strong technical skills to excel as a Front-End Developer.
+                                    <p>I am a very passionate Web Developer & Designer driven by quality & perfection. I am highly adaptive, culturally sensitive, and proactive. I love to spend my time finding realistic solutions for uncomfortable problems. I enjoy responsibility and accountability. Although I always strive to push myself past my limits, I strongly believe in the power of teamwork and base my efforts around working well with others as a part of my software development journey.
                                     </p>
                                     <h5>Contact me here!</h5>
                                     <p>Email: augustineritalondon@gmail.com</p>

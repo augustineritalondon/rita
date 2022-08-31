@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import harvoxxschool from '../../assets/images/harvoxxschool.png'
 import rita from '../../assets/images/ritap.png'
 import templatepic from '../../assets/images/template.png'
+import egis from '../../assets/images/Screenshot (163).png'
+import akawo from '../../assets/images/Screenshot (164).png'
+import kashback from '../../assets/images/Screenshot (165).png'
 import './Style.css'
 
 const ReactProjects = () => {
@@ -74,6 +77,39 @@ const ReactProjects = () => {
                                 <h5 className='title'>Website template</h5>
                                 <p>A website template built using react</p>
                                 <button><a href='https://templateschool.netlify.app/' target='_blank'>View</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='col-lg-4 col-md-4 col-12 '>
+                        <div className='projects-card'>
+                            <a href='https://egis-frontend-techfaithful.vercel.app/' target='_blank'><img src={egis} /></a>
+                            <div className='description'>
+                                <h5 className='title'>Egis website</h5>
+                                <p>E-commerce website for Industrial machinery</p>
+                                <button><a href='https://egis-frontend-techfaithful.vercel.app/' target='_blank'>View</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='col-lg-4 col-md-4 col-12 '>
+                        <div className='projects-card'>
+                            <a href='https://akawo.me/' target='_blank'><img src={akawo} /></a>
+                            <div className='description'>
+                                <h5 className='title'>Akawo.me</h5>
+                                <p>Information website for a digitalized saving app.</p>
+                                <button><a href='https://akawo.me/' target='_blank'>View</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='col-lg-4 col-md-4 col-12 '>
+                        <div className='projects-card'>
+                            <a href='https://kashback.netlify.app/' target='_blank'><img src={kashback} /></a>
+                            <div className='description'>
+                                <h5 className='title'>Kaskback</h5>
+                                <p>crypto wallet information website template</p>
+                                <button><a href='https://kashback.netlify.app/' target='_blank'>View</a></button>
                             </div>
                         </div>
                     </div>
