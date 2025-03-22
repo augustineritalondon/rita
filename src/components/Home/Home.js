@@ -64,8 +64,8 @@ const Home = () => {
                         <h5>What I Do</h5>
                         <h2>My Services</h2>
                     </div>
-                    <div className='row'>
-                        <div className='col-lg-4 col-md-4 col-12'>
+                    <div className='row flex-wrap'>
+                        <div className='col-lg-6 col-md-6 col-12'>
                             <div className='services-card'>
                                 <i class="fas fa-laptop-code"></i>
                                 <Fade bottom>
@@ -74,7 +74,7 @@ const Home = () => {
                                 </Fade>
                             </div>
                         </div>
-                        <div className='col-lg-4 col-md-4 col-12'>
+                        <div className='col-lg-6 col-md-6 col-12'>
                             <div className='services-card'>
                                 <i class="fas fa-pencil-ruler"></i>
                                 <Fade bottom>
@@ -83,12 +83,21 @@ const Home = () => {
                                 </Fade>
                             </div>
                         </div>
-                        <div className='col-lg-4 col-md-4 col-12'>
+                        <div className='col-lg-6 col-md-6 col-12'>
                             <div className='services-card'>
                                 <i class="fas fa-pencil-ruler"></i>
                                 <Fade bottom>
                                     <h4>Graphics Design</h4>
                                     <p>Creating of visual concepts to communicate information which includes: logos, flyers, mockups, brochures, business cards, etc.</p>
+                                </Fade>
+                            </div>
+                        </div>
+                        <div className='col-lg-6 col-md-6 col-12'>
+                            <div className='services-card'>
+                                <i class="fas fa-mobile-alt"></i>
+                                <Fade bottom>
+                                    <h4>Mobile Development(Frontend)</h4>
+                                    <p>Development of mobile applications for both Android and iOS platforms to provide users with a seamless mobile experience.</p>
                                 </Fade>
                             </div>
                         </div>
@@ -100,14 +109,14 @@ const Home = () => {
                 <div className='r-container a-cont'>
                     <div className='about_shape'></div>
                     <div className='row'>
-                        <div className='col-lg-5 col-md-5 col-12'>
+                        <div className='col-lg-5 col-md-12 col-12'>
                             <div className='aboutImage'>
                                 <Zoom>
-                                    <img src={aboutImage} />
+                                    <img src={aboutImage} className='img-cover'/>
                                 </Zoom>
                             </div>
                         </div>
-                        <div className='col-lg-7 col-md-7 col-12 b-container'>
+                        <div className='col-lg-7 col-md-12 col-12 b-container'>
                             <div className='aboutHeading'>
                                 <h1>About</h1>
                                 <Fade right>
@@ -148,7 +157,7 @@ const Home = () => {
 
                     <ul className='mb-5'>
                         <li onClick={() => setActive("first")}><Link to="" className={active === "first" ? 'active' : null}>React</Link></li>
-                        <li onClick={() => setActive("second")}><Link to="" className={active === "second" ? 'active' : null}>Angular</Link></li>
+                        {/* <li onClick={() => setActive("second")}><Link to="" className={active === "second" ? 'active' : null}>Angular</Link></li> */}
                         <li onClick={() => setActive("third")}><Link to="" className={active === "third" ? 'active' : null}>Ui/Ux Design</Link></li>
                         <li onClick={() => setActive("fourth")}><Link to="" className={active === "fourth" ? 'active' : null}>Graphics</Link></li>
                         <li onClick={() => setActive("fifth")}><Link to="" className={active === "fifth" ? 'active' : null}>Photo Manipulation</Link></li>
@@ -156,7 +165,7 @@ const Home = () => {
 
                     <div>
                         {active === "first" && <ReactProjects />}
-                        {active === "second" && <Angular />}
+                        {/* {active === "second" && <Angular />} */}
                         {active === "third" && <Ui />}
                         {active === "fourth" && <Graphics />}
                         {active === "fifth" && <Manipulation />}

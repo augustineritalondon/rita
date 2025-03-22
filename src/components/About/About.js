@@ -131,8 +131,14 @@ const About = () => {
                     <h3 style={{fontWeight: 300, fontSize: "32px", color: "#fff", paddingBottom: "25px"}}>Experience</h3>
                     <div className='experience-content'>
                         <div className='row'>
+                            <div className='col-8'><span style={{color:"#fff"}}>Frontend Web Developer </span> - 100Pay  <br/>Port Harcourt, Nigeria.</div>
+                            <div className='col-4' style={{display:"flex", justifyContent:"right"}}>2024 - present</div>
+                        </div>
+                    </div>
+                    <div className='experience-content'>
+                        <div className='row'>
                             <div className='col-8'><span style={{color:"#fff"}}>Frontend Web Developer </span> - Techfaithful  <br/>Port Harcourt, Nigeria.</div>
-                            <div className='col-4' style={{display:"flex", justifyContent:"right"}}>2022 - present</div>
+                            <div className='col-4' style={{display:"flex", justifyContent:"right"}}>2022 - 2024</div>
                         </div>
                     </div>
                     <div className='experience-content'>
@@ -209,11 +215,19 @@ const About = () => {
                                         </div>
                                     </div>
                                 </div>
+                                {/* <div class="skills-items"> */}
+                                    {/* <h6>NodeJs</h6> */}
+                                    {/* <div class="skills-progress"> */}
+                                        {/* <div class="skills-progress-bar javascript"> */}
+                                            {/* <span>45%</span> */}
+                                        {/* </div> */}
+                                    {/* </div> */}
+                                {/* </div> */}
                                 <div class="skills-items">
-                                    <h6>NodeJs</h6>
+                                    <h6>GIT</h6>
                                     <div class="skills-progress">
                                         <div class="skills-progress-bar javascript">
-                                            {/* <span>45%</span> */}
+                                            {/* <span>70%</span> */}
                                         </div>
                                     </div>
                                 </div>
@@ -227,14 +241,13 @@ const About = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="skills-items">
+                                {/* <div class="skills-items">
                                     <h6>Angular</h6>
                                     <div class="skills-progress">
                                         <div class="skills-progress-bar javascript">
-                                            {/* <span>60%</span> */}
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                                 <div class="skills-items">
                                     <h6>Illustrator</h6>
                                     <div class="skills-progress">
@@ -244,7 +257,7 @@ const About = () => {
                                     </div>
                                 </div>
                                 <div class="skills-items">
-                                    <h6>SEO</h6>
+                                    <h6>Tailwind CSS</h6>
                                     <div class="skills-progress">
                                         <div class="skills-progress-bar javascript">
                                             {/* <span>60%</span> */}
@@ -277,14 +290,7 @@ const About = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="skills-items">
-                                    <h6>GIT</h6>
-                                    <div class="skills-progress">
-                                        <div class="skills-progress-bar javascript">
-                                            {/* <span>70%</span> */}
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
