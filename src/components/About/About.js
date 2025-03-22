@@ -11,7 +11,7 @@ import vscode from '../../assets/images/vscode.png'
 import { Count } from '..'
 import Slider from "react-slick";
 import GoTo from '../Utils/GoTo'
-import { Zoom, Fade } from 'react-reveal';
+import { Zoom, Fade } from 'react-awesome-reveal';
 
 const About = () => {
     var settings = {

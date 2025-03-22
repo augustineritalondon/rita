@@ -5,7 +5,7 @@ import image from '../../assets/images/rita.png'
 import aboutImage from '../../assets/images/beautifulrita3.png'
 import { Link } from 'react-router-dom'
 import { ReactProjects, Angular, Ui, Graphics, Manipulation } from '../../components'
-import { Zoom, Fade } from 'react-reveal';
+import { Zoom, Fade } from 'react-awesome-reveal';
 import GoTo from '../Utils/GoTo'
 
 const Home = () => {

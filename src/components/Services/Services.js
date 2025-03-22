@@ -1,7 +1,7 @@
 import React from 'react'
 import './Services.css'
 import GoTo from '../Utils/GoTo'
-import { Zoom, Fade } from 'react-reveal';
+import { Zoom, Fade } from 'react-awesome-reveal';
 
 const Services = () => {
     return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import { Zoom, Fade } from 'react-reveal';
+import { Zoom, Fade } from 'react-awesome-reveal';
 
 const Footer = () => {
     return (
