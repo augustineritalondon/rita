@@ -1,25 +1,25 @@
-import React, { useRef } from 'react'
+import React /*, { useRef } */ from 'react'
 import './Contact.css'
 // import BaseMap from '../Map'
-import emailjs from '@emailjs/browser';
+// import emailjs from '@emailjs/browser';
 import GoTo from '../Utils/GoTo';
 
 
 const Contact = () => {
 
-    const form = useRef();
+    // const form = useRef();
 
-    const sendEmail = (e) => {
-        e.preventDefault();
-
-        emailjs.sendForm('service_epw9a5i', 'template_8wrfudx', form.current, 'user_QtrqioYRwPWtns39LyJkJ')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-            e.target.reset()
-    }
+    // const sendEmail = (e) => {
+    //     e.preventDefault();
+    //
+    //     emailjs.sendForm('service_epw9a5i', 'template_8wrfudx', form.current, 'user_QtrqioYRwPWtns39LyJkJ')
+    //         .then((result) => {
+    //             console.log(result.text);
+    //         }, (error) => {
+    //             console.log(error.text);
+    //         });
+    //         e.target.reset()
+    // }
 
     return (
         <>
