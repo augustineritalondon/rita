@@ -47,7 +47,7 @@ const WorkHistory = () => {
         },
         {
             id: 5,
-            title: "CRS Predictions",
+            title: "City Rebels",
             description: "Interactive sports prediction platform featuring live match scores, daily gaming challenges, and real-time analytics.",
             status: "Published",
             link: "https://crspredictions.com/",

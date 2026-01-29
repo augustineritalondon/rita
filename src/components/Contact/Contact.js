@@ -24,7 +24,7 @@ const Contact = () => {
     return (
         <>
             <GoTo />
-            <section className='contactPage'>
+            {/* <section className='contactPage'>
                 <div className='r-container'>
                     <h4>Contact Information</h4>
                     <div className='row mt-5'>
@@ -63,13 +63,12 @@ const Contact = () => {
                         </div>
                         <div className='col-lg-6 col-12'>
                             <div>
-                                {/* <BaseMap /> */}
                             </div>
 
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </>
     )
 }
