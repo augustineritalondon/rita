@@ -83,11 +83,11 @@ const ReactProjects = () => {
 
                     <div className='col-lg-4 col-md-4 col-12 '>
                         <div className='projects-card'>
-                            <a href='https://templateschool.netlify.app/' target='_blank'><img src={templatepic} /></a>
+                            <a href='https://lifeskills-connect.accordiaharmony.org/' target='_blank'><img src={templatepic} /></a>
                             <div className='description'>
-                                <h5 className='title'>Website template</h5>
-                                <p>A website template built using react</p>
-                                <button><a href='https://templateschool.netlify.app/' target='_blank'>View</a></button>
+                                <h5 className='title'>LifeSkills Connect</h5>
+                                <p>LifeSkills Connect is a web-based Learning Management System designed to deliver, track, and manage educational content and courses.</p>
+                                <button><a href='https://lifeskills-connect.accordiaharmony.org/' target='_blank'>View</a></button>
                             </div>
                         </div>
                     </div>

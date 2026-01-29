@@ -18,10 +18,10 @@ const About = () => {
         dots: false,
         infinite: true,
         autoplay: true,
-        speed: 1000,
-        // autoplaySpeed: 1000,
+        speed: 3000,
+        autoplaySpeed: 0,
         cssEase: "linear",
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 1,
         initialSlide: 0,
         pauseOnHover: true,
@@ -29,24 +29,22 @@ const About = () => {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
                     infinite: true,
-                    dots: true
                 }
             },
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1
                 }
             }
@@ -58,38 +56,28 @@ const About = () => {
             <GoTo />
             <section className='aboutPage'>
                 <div className='r-container'>
-                    <div className='row'>
+                    <div className='row justify-content-center'>
                         <h1>About</h1>
-                        <div className='col-lg-5 col-12 image' style={{ display: "flex", justifyContent: "flex-end" }}>
-                            <div>
-                                <Zoom duration={2000}>
-                                    <img src={rita} />
-                                </Zoom>
-                            </div>
-                        </div>
-                        <div className='col-lg-7 col-12'>
-                            <div className='about_me'>
-                                <Fade right>
+                        <div className='col-lg-10 col-12'>
+                            <div className='about_me text-center'>
+                                <Fade bottom>
                                     <h5>About Me</h5>
-                                    <h3>A Web Developer & UI/UX Designer Based in Nigeria.</h3>
-                                    <p>I am a very passionate Web Developer & Designer driven by quality & perfection. I am highly adaptive, culturally sensitive, and proactive. I love to spend my time finding realistic solutions for uncomfortable problems. I enjoy responsibility and accountability. Although I always strive to push myself past my limits, I strongly believe in the power of teamwork and base my efforts around working well with others as a part of my software development journey.
+                                    <h3>A Fullstack Developer & Web Architect Based in Nigeria.</h3>
+                                    <p>I am a highly motivated Fullstack Developer driven by the challenge of building scalable, user-centric applications. With a focus on quality and modern architecture, I specialize in crafting seamless digital experiences from front-to-back. I thrive in collaborative environments and am passionate about finding elegant solutions to complex problems through continuous learning and innovation.
                                     </p>
 
                                     <div className='about_contact'>
-                                        <div className='row'>
-                                            <div className='col-lg-6 col-md-6 col-12'>
+                                        <div className='row justify-content-center mt-4'>
+                                            <div className='col-lg-4 col-md-6 col-12'>
                                                 <p><span>Name: </span>Rita London</p>
                                                 <p><span>Address: </span>Port Harcourt, RS. Nigeria</p>
-                                                <p><span>Zip Code: </span>500102</p>
                                             </div>
-                                            <div className='col-lg-6 col-md-6 col-12'>
+                                            <div className='col-lg-4 col-md-6 col-12'>
                                                 <p><span>Email: </span>augustineritalondon@gmail.com</p>
                                                 <p><span>Phone: </span>+234 906 7598 578</p>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <button className='mt-5'><a href={require('../../assets/AUGUSTINE.pdf')} target="_blank">Download CV</a></button>
                                 </Fade>
 
                             </div>
@@ -173,7 +161,7 @@ const About = () => {
                     <h3 style={{fontWeight: 300, fontSize: "32px", color: "#fff", paddingBottom: "25px"}}>Education</h3>
                     <div className='experience-content'>
                         <div className='row'>
-                            <div className='col-8'><span style={{color:"#fff"}}>Bachelor of Science in Computer Science </span> - All Nations University  <br/>Koforidua, Ghana.</div>
+                            <div className='col-8'><span style={{color:"#fff"}}>Bachelor of Science in Computer Science </span> - Nkwame Nkrumah University of Science and Technology   <br/>Koforidua, Ghana.</div>
                             <div className='col-4' style={{display:"flex", justifyContent:"right"}}>2015 - 2019</div>
                         </div>
                     </div>
@@ -185,112 +173,70 @@ const About = () => {
                     <div className='heading'>
                         <hr className='hr' />
                         <h5>Skills</h5>
-                        <h2>My Skills</h2>
+                        <h2>Expertise</h2>
                     </div>
 
                     <div>
                         <div class="row skills-wrappers">
                             <div class="col-lg-4 col-md-6 col-12">
                                 <div class="skills-items">
-                                    <h6>JavaScript</h6>
+                                    <h6>JavaScript (ES6+)</h6>
                                     <div class="skills-progress">
-                                        <div class="skills-progress-bar javascript">
-                                            {/* <span>70%</span> */}
-                                        </div>
+                                        <div class="skills-progress-bar w-90"></div>
                                     </div>
                                 </div>
                                 <div class="skills-items">
-                                    <h6>ReactJs</h6>
+                                    <h6>React.js / Next.js</h6>
                                     <div class="skills-progress">
-                                        <div class="skills-progress-bar javascript">
-                                            {/* <span>74%</span> */}
-                                        </div>
+                                        <div class="skills-progress-bar w-85"></div>
                                     </div>
                                 </div>
                                 <div class="skills-items">
-                                    <h6>Photoshop</h6>
+                                    <h6>TypeScript</h6>
                                     <div class="skills-progress">
-                                        <div class="skills-progress-bar javascript">
-                                            {/* <span>80%</span> */}
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* <div class="skills-items"> */}
-                                    {/* <h6>NodeJs</h6> */}
-                                    {/* <div class="skills-progress"> */}
-                                        {/* <div class="skills-progress-bar javascript"> */}
-                                            {/* <span>45%</span> */}
-                                        {/* </div> */}
-                                    {/* </div> */}
-                                {/* </div> */}
-                                <div class="skills-items">
-                                    <h6>GIT</h6>
-                                    <div class="skills-progress">
-                                        <div class="skills-progress-bar javascript">
-                                            {/* <span>70%</span> */}
-                                        </div>
+                                        <div class="skills-progress-bar w-80"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-12">
                                 <div class="skills-items">
-                                    <h6>HTML</h6>
+                                    <h6>Node.js / Express</h6>
                                     <div class="skills-progress">
-                                        <div class="skills-progress-bar javascript">
-                                            {/* <span>90%</span> */}
-                                        </div>
+                                        <div class="skills-progress-bar w-75"></div>
+                                    </div>
+                                </div>
+                                <div class="skills-items">
+                                    <h6>MongoDB / MySQL</h6>
+                                    <div class="skills-progress">
+                                        <div class="skills-progress-bar w-70"></div>
+                                    </div>
+                                </div>
+                                <div class="skills-items">
+                                    <h6>RESTful APIs / GraphQL</h6>
+                                    <div class="skills-progress">
+                                        <div class="skills-progress-bar w-80"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="skills-items">
+                                    <h6>Tailwind CSS / SCSS</h6>
+                                    <div class="skills-progress">
+                                        <div class="skills-progress-bar w-90"></div>
                                     </div>
                                 </div>
                                 {/* <div class="skills-items">
-                                    <h6>Angular</h6>
+                                    <h6>Docker / AWS</h6>
                                     <div class="skills-progress">
-                                        <div class="skills-progress-bar javascript">
-                                        </div>
+                                        <div class="skills-progress-bar w-60"></div>
                                     </div>
                                 </div> */}
                                 <div class="skills-items">
-                                    <h6>Illustrator</h6>
+                                    <h6>Git / GitHub</h6>
                                     <div class="skills-progress">
-                                        <div class="skills-progress-bar javascript">
-                                            {/* <span>80%</span> */}
-                                        </div>
+                                        <div class="skills-progress-bar w-85"></div>
                                     </div>
                                 </div>
-                                <div class="skills-items">
-                                    <h6>Tailwind CSS</h6>
-                                    <div class="skills-progress">
-                                        <div class="skills-progress-bar javascript">
-                                            {/* <span>60%</span> */}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="skills-items">
-                                    <h6>CSS</h6>
-                                    <div class="skills-progress">
-                                        <div class="skills-progress-bar javascript">
-                                            {/* <span>90%</span> */}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills-items">
-                                    <h6>Figma</h6>
-                                    <div class="skills-progress">
-                                        <div class="skills-progress-bar javascript">
-                                            {/* <span>75%</span> */}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills-items">
-                                    <h6>Bootstrap</h6>
-                                    <div class="skills-progress">
-                                        <div class="skills-progress-bar javascript">
-                                            {/* <span>85%</span> */}
-                                        </div>
-                                    </div>
-                                </div>
-                                
                             </div>
                         </div>
                     </div>
@@ -302,28 +248,28 @@ const About = () => {
                     <div className='heading'>
                         <hr className='hr' />
                         <h5>Tools</h5>
-                        <h2>Some Tools I Use</h2>
+                        <h2>Development Suite</h2>
                     </div>
 
                     <div className='tools_slider'>
                         <Slider {...settings}>
                             <div className='slider_item'>
-                                <img src={git} />
+                                <img src={git} alt="Git" />
                             </div>
                             <div className='slider_item'>
-                                <img src={slack} />
+                                <img src={slack} alt="Slack" />
                             </div>
                             <div className='slider_item'>
-                                <img src={vscode} />
+                                <img src={vscode} alt="VS Code" />
                             </div>
                             <div className='slider_item'>
-                                <img src={figma} />
+                                <img src={figma} alt="Figma" />
                             </div>
                             <div className='slider_item'>
-                                <img src={photoshop} />
+                                <img src={photoshop} alt="Photoshop" />
                             </div>
                             <div className='slider_item'>
-                                <img src={illustrator} />
+                                <img src={illustrator} alt="Illustrator" />
                             </div>
                         </Slider>
                     </div>

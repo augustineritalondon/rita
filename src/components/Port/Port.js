@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { ReactProjects, Angular, Ui, Graphics, Manipulation } from '../../components'
 import GoTo from '../Utils/GoTo'
 import './Port.css'
+import WorkHistory from '../../components/Portfolio/WorkHistory'
 
 const Port = () => {
 
@@ -11,7 +12,7 @@ const Port = () => {
     return (
         <>
             <GoTo />
-            <section className='port'>
+            {/* <section className='port'>
                 <div className='r-container'>
                     <div className='heading'>
                         <hr className='hr' />
@@ -35,7 +36,8 @@ const Port = () => {
                         {active === "fifth" && <Manipulation />}
                     </div>
                 </div>
-            </section>
+            </section> */}
+            <WorkHistory />
         </>
     )
 }
