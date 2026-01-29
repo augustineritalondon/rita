@@ -1,13 +1,9 @@
-import React, {useState} from 'react'
-import { Link } from 'react-router-dom'
-import { ReactProjects, Angular, Ui, Graphics, Manipulation } from '../../components'
+import React from 'react'
 import GoTo from '../Utils/GoTo'
 import './Port.css'
 import WorkHistory from '../../components/Portfolio/WorkHistory'
 
 const Port = () => {
-
-    const [active, setActive] = useState("first")
 
     return (
         <>

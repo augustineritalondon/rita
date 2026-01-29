@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import { Zoom, Fade } from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 const Footer = () => {
     return (
@@ -24,10 +24,10 @@ const Footer = () => {
                             <p>Phone: +234 906 7598 578</p>
                             <div className='icons' style={{ margin: 0, padding: 0 }}>
                                 <ul className='mt-3'>
-                                    <li><a href='/' target='_blank'><i class="fab fa-facebook-f facebook"></i></a></li>
-                                    <li><a href='/' target='_blank'><i class="fab fa-twitter twitter"></i></a></li>
-                                    <li><a href='https://www.linkedin.com/in/rita-london-840361147/' target='_blank' rel='opener'><i class="fab fa-linkedin-in linkedin"></i></a></li>
-                                    <li><a href='https://github.com/augustineritalondon' target='_blank' rel='opener'><i class="fab fa-github github"></i></a></li>
+                                    <li><a href='https://web.facebook.com/augustinerita.london' target='_blank' rel='noreferrer'><i className="fab fa-facebook-f facebook"></i></a></li>
+                                    <li><a href='https://twitter.com/rita_london' target='_blank' rel='noreferrer'><i className="fab fa-twitter twitter"></i></a></li>
+                                    <li><a href='https://www.linkedin.com/in/rita-london-840361147/' target='_blank' rel='noreferrer'><i className="fab fa-linkedin-in linkedin"></i></a></li>
+                                    <li><a href='https://github.com/augustineritalondon' target='_blank' rel='noreferrer'><i className="fab fa-github github"></i></a></li>
                                 </ul>
                             </div>
                         </div>

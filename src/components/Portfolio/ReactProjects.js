@@ -19,7 +19,7 @@ const ReactProjects = () => {
     // ]
 
 
-    const [data, setData] = useState([
+    const [data] = useState([
         {
             id: 1,
             title: "Harvoxx School",
@@ -27,8 +27,7 @@ const ReactProjects = () => {
             button: "view",
         },
     ])
-    const [currentPage, setCurrentPage] = useState(1)
-    const [itemsPerPage, setItemsPerPage] = useState(6)
+    const [itemsPerPage] = useState(6)
 
     const pages = [];
     for (let i = 1; i < Math.ceil(data.length / itemsPerPage); i++) {
@@ -50,11 +49,11 @@ const ReactProjects = () => {
                 <div className='row'>
                     <div className='col-lg-4 col-md-4 col-12 '>
                         <div className='projects-card'>
-                            <a href='https://school.hthub.com.ng' target='_blank'><img src={harvoxxschool} /></a>
+                            <a href='https://school.hthub.com.ng' target='_blank' rel='noreferrer'><img src={harvoxxschool} alt="100Pay Dashboard" /></a>
                             <div className='description'>
                                 <h5 className='title'>100Pay Dashboard</h5>
                                 <p>A platform for managing payments for 100Pay.</p>
-                                <button><a href='https://dashboard.100pay.co/login' target='_blank'>View</a></button>
+                                <button><a href='https://dashboard.100pay.co/login' target='_blank' rel='noreferrer'>View</a></button>
                             </div>
                         </div>
                     </div>
@@ -62,65 +61,65 @@ const ReactProjects = () => {
 
                     <div className='col-lg-4 col-md-4 col-12 '>
                         <div className='projects-card'>
-                            <a href='http://ritalondon.herokuapp.com/' target='_blank'><img src={rita} /></a>
+                            <a href='http://ritalondon.herokuapp.com/' target='_blank' rel='noreferrer'><img src={rita} alt="Portfolio" /></a>
                             <div className='description'>
                                 <h5 className='title'>Portfolio</h5>
                                 <p>My personal portfolio</p>
-                                <button><a href='http://ritalondon.herokuapp.com/' target='_blank'>View</a></button>
+                                <button><a href='http://ritalondon.herokuapp.com/' target='_blank' rel='noreferrer'>View</a></button>
                             </div>
                         </div>
                     </div>
                     <div className='col-lg-4 col-md-4 col-12 '>
                         <div className='projects-card'>
-                            <a href='https://kashback.netlify.app/' target='_blank'><img src={kashback} /></a>
+                            <a href='https://kashback.netlify.app/' target='_blank' rel='noreferrer'><img src={kashback} alt="Everest Mobility" /></a>
                             <div className='description'>
                                 <h5 className='title'>Everest Mobility</h5>
                                 <p>An informative website for a mobile app.</p>
-                                <button><a href='https://www.everestmobility.co/' target='_blank'>View</a></button>
+                                <button><a href='https://www.everestmobility.co/' target='_blank' rel='noreferrer'>View</a></button>
                             </div>
                         </div>
                     </div>
 
                     <div className='col-lg-4 col-md-4 col-12 '>
                         <div className='projects-card'>
-                            <a href='https://lifeskills-connect.accordiaharmony.org/' target='_blank'><img src={templatepic} /></a>
+                            <a href='https://lifeskills-connect.accordiaharmony.org/' target='_blank' rel='noreferrer'><img src={templatepic} alt="LifeSkills Connect" /></a>
                             <div className='description'>
                                 <h5 className='title'>LifeSkills Connect</h5>
                                 <p>LifeSkills Connect is a web-based Learning Management System designed to deliver, track, and manage educational content and courses.</p>
-                                <button><a href='https://lifeskills-connect.accordiaharmony.org/' target='_blank'>View</a></button>
+                                <button><a href='https://lifeskills-connect.accordiaharmony.org/' target='_blank' rel='noreferrer'>View</a></button>
                             </div>
                         </div>
                     </div>
 
                     <div className='col-lg-4 col-md-4 col-12 '>
                         <div className='projects-card'>
-                            <a href='https://kashback.netlify.app/' target='_blank'><img src={nano} /></a>
+                            <a href='https://kashback.netlify.app/' target='_blank' rel='noreferrer'><img src={nano} alt="Ecommerce Dashboard" /></a>
                             <div className='description'>
                                 <h5 className='title'>Ecommerce Dashboard Template</h5>
                                 <p>A dashboard template for an ecommerce website.</p>
-                                <button><a href='https://feat-auth--shp100-v2.netlify.app/' target='_blank'>View</a></button>
+                                <button><a href='https://feat-auth--shp100-v2.netlify.app/' target='_blank' rel='noreferrer'>View</a></button>
                             </div>
                         </div>
                     </div>
 
                     <div className='col-lg-4 col-md-4 col-12 '>
                         <div className='projects-card'>
-                            <a href='https://egis-frontend-techfaithful.vercel.app/' target='_blank'><img src={egis} /></a>
+                            <a href='https://egis-frontend-techfaithful.vercel.app/' target='_blank' rel='noreferrer'><img src={egis} alt="Egis Website" /></a>
                             <div className='description'>
                                 <h5 className='title'>Egis website</h5>
                                 <p>E-commerce website for Industrial machinery</p>
-                                <button><a href='https://egis-frontend-techfaithful.vercel.app/' target='_blank'>View</a></button>
+                                <button><a href='https://egis-frontend-techfaithful.vercel.app/' target='_blank' rel='noreferrer'>View</a></button>
                             </div>
                         </div>
                     </div>
 
                     <div className='col-lg-4 col-md-4 col-12 '>
                         <div className='projects-card'>
-                            <a href='https://akawo.me/' target='_blank'><img src={akawo} /></a>
+                            <a href='https://akawo.me/' target='_blank' rel='noreferrer'><img src={akawo} alt="Akawo.me" /></a>
                             <div className='description'>
                                 <h5 className='title'>Akawo.me</h5>
                                 <p>Information website for a digitalized saving app.</p>
-                                <button><a href='https://akawo.me/' target='_blank'>View</a></button>
+                                <button><a href='https://akawo.me/' target='_blank' rel='noreferrer'>View</a></button>
                             </div>
                         </div>
                     </div>

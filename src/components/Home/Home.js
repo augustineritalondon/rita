@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Home.css'
 import '../../App.css'
 import image from '../../assets/images/rita.png'
-import { Link } from 'react-router-dom'
+
 import { WorkHistory } from '../../components'
 import { Zoom, Fade } from 'react-awesome-reveal';
 import GoTo from '../Utils/GoTo'
@@ -63,10 +63,10 @@ const Home = () => {
                                 <div className='icons'>
                                     <ul>
                                         <Fade right delay={1000}>
-                                            <li><a href='#' target='_blank' rel='noopener noreferrer'><i className="fab fa-facebook-f facebook"></i></a></li>
-                                            <li><a href='#' target='_blank' rel='noopener noreferrer'><i className="fab fa-twitter twitter"></i></a></li>
-                                            <li><a href='https://www.linkedin.com/in/rita-london-840361147/' target='_blank' rel='noopener noreferrer'><i className="fab fa-linkedin-in linkedin"></i></a></li>
-                                            <li><a href='https://github.com/augustineritalondon' target='_blank' rel='noopener noreferrer'><i className="fab fa-github github"></i></a></li>
+                                            <li><a href='https://web.facebook.com/augustinerita.london' target='_blank' rel='noreferrer'><i className="fab fa-facebook-f facebook"></i></a></li>
+                                            <li><a href='https://twitter.com/rita_london' target='_blank' rel='noreferrer'><i className="fab fa-twitter twitter"></i></a></li>
+                                            <li><a href='https://www.linkedin.com/in/rita-london-840361147/' target='_blank' rel='noreferrer'><i className="fab fa-linkedin-in linkedin"></i></a></li>
+                                            <li><a href='https://github.com/augustineritalondon' target='_blank' rel='noreferrer'><i className="fab fa-github github"></i></a></li>
                                         </Fade>
                                     </ul>
                                 </div>
@@ -148,10 +148,10 @@ const Home = () => {
                                     <p>Phone: +234 906 7598 578</p>
                                     <div className='icons' style={{ margin: 0, padding: 0 }}>
                                         <ul style={{ margin: 0, padding: 0 }}>
-                                            <li><a href='#' target='_blank' rel='noopener noreferrer'><i className="className='fab fa-facebook-f facebook'"></i></a></li>
-                                            <li><a href='#' target='_blank'><i class="fab fa-twitter twitter"></i></a></li>
-                                            <li><a href='https://www.linkedin.com/in/rita-london-840361147/' target='_blank'><i class="fab fa-linkedin-in linkedin"></i></a></li>
-                                            <li><a href='https://github.com/augustineritalondon' target='_blank'><i class="fab fa-github github"></i></a></li>
+                                            <li><a href='https://web.facebook.com/augustinerita.london' target='_blank' rel='noreferrer'><i className="fab fa-facebook-f facebook"></i></a></li>
+                                            <li><a href='https://twitter.com/rita_london' target='_blank' rel='noreferrer'><i className="fab fa-twitter twitter"></i></a></li>
+                                            <li><a href='https://www.linkedin.com/in/rita-london-840361147/' target='_blank' rel='noreferrer'><i className="fab fa-linkedin-in linkedin"></i></a></li>
+                                            <li><a href='https://github.com/augustineritalondon' target='_blank' rel='noreferrer'><i className="fab fa-github github"></i></a></li>
                                         </ul>
                                     </div>
 

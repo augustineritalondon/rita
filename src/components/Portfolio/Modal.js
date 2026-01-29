@@ -10,7 +10,7 @@ const Modal = ({clickedimg, handleRotationRight, setClickedimg}) => {
 
     return <>
         <div className='overlay dismiss' onClick={handleClick}>
-            <img src={clickedimg} alt='bigger picture' />
+            <img src={clickedimg} alt='Enlarged view' />
 
             <span className='dismiss' onClick={handleClick}>X</span>
 

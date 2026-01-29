@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import images from "../../assets/images/image.js";
+
 import './Navbar.css';
 import '../../App.css';
 import logd from '../../assets/images/logo1.png';

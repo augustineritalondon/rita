@@ -10,11 +10,11 @@ const Angular = () => {
                 <div className='row'>                  
                     <div className='col-lg-4 col-md-4 col-12 '>
                         <div className='projects-card'>
-                            <a href='http://rubysplace.herokuapp.com/'><img src={ruby} /></a>
+                            <button className="link-button" onClick={() => window.open('http://rubysplace.herokuapp.com/', '_blank')}><img src={ruby} alt="Ruby's Place" /></button>
                             <div className='description'>
                                 <h5 className='title'>Ruby's Place</h5>
                                 <p>Online Restaurant Template.</p>
-                                <button><a href='http://rubysplace.herokuapp.com/'>View</a></button>
+                                <button onClick={() => window.open('http://rubysplace.herokuapp.com/', '_blank')}>View</button>
                             </div>
                         </div>
                     </div>
@@ -22,11 +22,11 @@ const Angular = () => {
 
                     <div className='col-lg-4 col-md-4 col-12 '>
                         <div className='projects-card'>
-                            <a href='#'><img src={elon} /></a>
+                            <div className="disabled-link"><img src={elon} alt="Elon_EMF" /></div>
                             <div className='description'>
                                 <h5 className='title'>Elon_EMF</h5>
                                 <p>Website haven't been published yet. The link will be made available when it is published.</p>
-                                <button><a href='#' aria-disabled>View</a></button>
+                                <button disabled>View</button>
                             </div>
                         </div>
                     </div>

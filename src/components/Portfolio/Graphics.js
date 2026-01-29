@@ -62,7 +62,7 @@ const Graphics = () => {
                             <div className='col-lg-4 col-md-4 col-12'>
                                 <div className='projects-card wrapper'>
                                     <div key={index}>
-                                        <img src={item.image} onClick={() => handleClick(item, index)} />
+                                        <img src={item.image} alt={`Gallery item ${index}`} onClick={() => handleClick(item, index)} />
                                     </div>
                                 </div>
                             </div>

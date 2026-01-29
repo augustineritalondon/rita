@@ -1,7 +1,7 @@
 import React from 'react'
 import './About.css'
 import '../../App.css'
-import rita from '../../assets/images/rita.png'
+
 import git from '../../assets/images/git.png'
 import figma from '../../assets/images/figma.png'
 import illustrator from '../../assets/images/illustrator.png'
@@ -11,7 +11,7 @@ import vscode from '../../assets/images/vscode.png'
 import { Count } from '..'
 import Slider from "react-slick";
 import GoTo from '../Utils/GoTo'
-import { Zoom, Fade } from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 const About = () => {
     var settings = {
