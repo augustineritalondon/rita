@@ -1,74 +1,94 @@
-import React /*, { useRef } */ from 'react'
+import React from 'react'
 import './Contact.css'
-// import BaseMap from '../Map'
-// import emailjs from '@emailjs/browser';
-import GoTo from '../Utils/GoTo';
-
+import GoTo from '../Utils/GoTo'
+import { Fade } from 'react-awesome-reveal'
 
 const Contact = () => {
-
-    // const form = useRef();
-
-    // const sendEmail = (e) => {
-    //     e.preventDefault();
-    //
-    //     emailjs.sendForm('service_epw9a5i', 'template_8wrfudx', form.current, 'user_QtrqioYRwPWtns39LyJkJ')
-    //         .then((result) => {
-    //             console.log(result.text);
-    //         }, (error) => {
-    //             console.log(error.text);
-    //         });
-    //         e.target.reset()
-    // }
-
     return (
         <>
             <GoTo />
-            {/* <section className='contactPage'>
-                <div className='r-container'>
-                    <h4>Contact Information</h4>
-                    <div className='row mt-5'>
-                        <div className='col-lg-4 col-md-6 col-12'>
-                            <p>Adress: Port Harcourt, RS, Nigeria.</p>
-                        </div>
-                        <div className='col-lg-4 col-md-6 col-12'>
-                            <p>Phone: <span>+234 906 7598 578</span></p>
-                        </div>
-                        <div className='col-lg-4 col-md-6 col-12'>
-                            <p>Email: <span>augustineritalondon@gmail.com</span></p>
-                        </div>
-                        <div className='col-lg-4 col-md-6 col-12'>
-                            <p>Website: <span><a href='https://ritalondon.netlify.app/' style={{textDecoration: "none"}}>https://ritalondon.netlify.app/</a></span></p>
-                        </div>
-                    </div>
+            <main className='contact-standalone'>
+                {/* Background decorative shape */}
+                <div className='contact-bg-shape'></div>
 
-                    <div className='row mt-4'>
-                        <div className='col-lg-6 col-12'>
-                            <form ref={form} onSubmit={sendEmail}>
-                                <div>
-                                    <input placeholder='Your Name' type="text" name="name" />
+                <div className='contact-container'>
+                    <Fade bottom duration={900} triggerOnce>
+                        <div className='contact-hero-card'>
+
+                            {/* Status badge */}
+                            <div className='contact-badge'>
+                                <span className='contact-pulse-dot'></span>
+                                <span>Available for full-time roles & contract work</span>
+                            </div>
+
+                            {/* Main large heading */}
+                            <h1 className='contact-main-heading'>
+                                Let’s connect & discuss opportunities.
+                            </h1>
+
+                            <p className='contact-desc'>
+                                Looking for a senior frontend / fullstack developer or want to consult on an architectural build? Feel free to reach out directly through any of the channels below.
+                            </p>
+
+                            {/* Contact channels grid */}
+                            <div className='contact-channels-grid'>
+                                <a href='mailto:augustineritalondon@gmail.com' className='contact-channel'>
+                                    <div className='contact-channel-icon'>
+                                        <i className="fas fa-envelope"></i>
+                                    </div>
+                                    <div className='contact-channel-info'>
+                                        <span className='contact-channel-label'>Email Address</span>
+                                        <span className='contact-channel-val'>augustineritalondon@gmail.com</span>
+                                    </div>
+                                </a>
+
+                                <a href='tel:+2349067598578' className='contact-channel'>
+                                    <div className='contact-channel-icon'>
+                                        <i className="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div className='contact-channel-info'>
+                                        <span className='contact-channel-label'>Direct Line / WhatsApp</span>
+                                        <span className='contact-channel-val'>+234 906 7598 578</span>
+                                    </div>
+                                </a>
+
+                                <div className='contact-channel'>
+                                    <div className='contact-channel-icon'>
+                                        <i className="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div className='contact-channel-info'>
+                                        <span className='contact-channel-label'>Location & Availability</span>
+                                        <span className='contact-channel-val'>Port Harcourt, Nigeria (Open to Worldwide Remote)</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <input placeholder='Your Email' type="text" name="email" />
-                                </div>
-                                <div>
-                                    <input placeholder='Subject' type="text" name="subject" />
-                                </div>
-                                <div>
-                                    <textarea placeholder='Your Name' rows="4" cols='50' name='message' />
+                            </div>
+
+                            {/* Socials bar */}
+                            <div className='contact-footer-bar'>
+                                <div className='contact-quick-links'>
+                                    <span className='contact-quick-label'>Connect with me:</span>
                                 </div>
 
-                                <button type='submit' className='mb-5'>Send</button>
-                            </form>
-                        </div>
-                        <div className='col-lg-6 col-12'>
-                            <div>
+                                <div className='contact-social-icons'>
+                                    <a href='https://github.com/augustineritalondon' target='_blank' rel='noreferrer' aria-label='GitHub'>
+                                        <i className="fab fa-github"></i>
+                                    </a>
+                                    <a href='https://www.linkedin.com/in/rita-london-840361147/' target='_blank' rel='noreferrer' aria-label='LinkedIn'>
+                                        <i className="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href='https://twitter.com/rita_london' target='_blank' rel='noreferrer' aria-label='Twitter'>
+                                        <i className="fab fa-twitter"></i>
+                                    </a>
+                                    <a href='https://web.facebook.com/augustinerita.london' target='_blank' rel='noreferrer' aria-label='Facebook'>
+                                        <i className="fab fa-facebook-f"></i>
+                                    </a>
+                                </div>
                             </div>
 
                         </div>
-                    </div>
+                    </Fade>
                 </div>
-            </section> */}
+            </main>
         </>
     )
 }

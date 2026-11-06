@@ -1,0 +1,643 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@400;500;600&display=swap");
+
+/* ============================================================
+   HOME WORK EXPERIENCE — Fixed to Screen Pinning on Scroll
+   ============================================================ */
+
+.home-work-exp {
+    position: relative;
+    /* Height creates the scrolling runway: as user scrolls this length,
+       the section stays fixed to screen, advancing each experience */
+    height: 320vh;
+    background: transparent;
+}
+
+/* Fixed viewport track pinned to screen */
+.hwe-sticky-track {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 64px;
+    height: calc(100vh - 64px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.hwe-container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 clamp(28px, 4vw, 70px);
+    box-sizing: border-box;
+}
+
+/* ---- Header row ---- */
+.hwe-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hwe-eyebrow {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0 0 8px;
+}
+
+.hwe-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(26px, 3.2vw, 42px);
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+}
+
+.hwe-years-badge {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 14px 22px;
+    backdrop-filter: blur(10px);
+    flex-shrink: 0;
+}
+
+.hwe-years-num {
+    font-family: "Montserrat", sans-serif;
+    font-size: 34px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1;
+    letter-spacing: -0.04em;
+}
+
+.hwe-years-label {
+    font-family: "Poppins", sans-serif;
+    font-size: 12.5px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.35;
+}
+
+/* ---- Two-column body ---- */
+.hwe-body {
+    display: grid;
+    grid-template-columns: 310px 1fr;
+    gap: 40px;
+    align-items: start;
+    position: relative;
+}
+
+/* ============================================================
+   LEFT: Tab navigation
+   ============================================================ */
+
+.hwe-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hwe-tab {
+    all: unset;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+    border-radius: 14px;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s ease, border-color 0.3s ease, transform 0.25s ease;
+    border: 1px solid transparent;
+    background: transparent;
+    text-align: left;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.hwe-tab:hover {
+    background: rgba(255, 255, 255, 0.04);
+    transform: translateX(4px);
+}
+
+.hwe-tab--active {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(255, 255, 255, 0.04);
+    transform: translateX(0);
+}
+
+/* Left coloured bar on active tab */
+.hwe-tab--active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 20%;
+    bottom: 20%;
+    width: 3px;
+    border-radius: 0 2px 2px 0;
+    background: var(--dot);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.hwe-tab-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hwe-tab--active .hwe-tab-dot {
+    transform: scale(1.3);
+    box-shadow: 0 0 10px var(--dot);
+}
+
+.hwe-tab-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 1;
+    min-width: 0;
+}
+
+.hwe-tab-company {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.85);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.3s ease;
+}
+
+.hwe-tab--active .hwe-tab-company {
+    color: #ffffff;
+}
+
+.hwe-tab-period {
+    font-family: "Poppins", sans-serif;
+    font-size: 11.5px;
+    color: rgba(255, 255, 255, 0.4);
+    transition: color 0.3s ease;
+}
+
+.hwe-tab--active .hwe-tab-period {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.hwe-tab-current {
+    font-family: "Poppins", sans-serif;
+    font-size: 9.5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #4ade80;
+    background: rgba(74, 222, 128, 0.12);
+    border: 1px solid rgba(74, 222, 128, 0.3);
+    border-radius: 20px;
+    padding: 3px 8px;
+    white-space: nowrap;
+}
+
+/* ============================================================
+   RIGHT: Fixed Single Detail Window
+   ============================================================ */
+
+.hwe-detail-wrap {
+    position: relative;
+    min-height: 440px;
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+    padding-right: 12px;
+    scrollbar-width: none; /* Firefox: hide scrollbar */
+    -ms-overflow-style: none; /* IE / Edge: hide scrollbar */
+}
+
+/* Chrome, Safari, Opera: hide scrollbar */
+.hwe-detail-wrap::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.hwe-detail {
+    display: none;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.hwe-detail--visible {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hwe-accent-bar {
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    margin-bottom: 22px;
+    opacity: 0.9;
+}
+
+.hwe-detail-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.hwe-detail-role {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(20px, 2.4vw, 28px);
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.hwe-detail-company {
+    font-family: "Poppins", sans-serif;
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+}
+
+.hwe-detail-sep {
+    opacity: 0.4;
+    margin: 0 2px;
+}
+
+.hwe-detail-period {
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 4px;
+    letter-spacing: 0.02em;
+}
+
+.hwe-detail-desc {
+    font-family: "Poppins", sans-serif;
+    font-size: 15.5px;
+    line-height: 1.85;
+    color: rgba(255, 255, 255, 0.62);
+    margin: 0 0 36px 0;
+}
+
+/* ── Nested Projects List inside a Job ── */
+.hwe-projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin: 0 0 36px 0;
+}
+
+.hwe-project-block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hwe-project-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 8px;
+}
+
+.hwe-project-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16.5px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+.hwe-project-link {
+    font-family: "Poppins", sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #4ade80;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.hwe-project-link:hover {
+    color: #86efac;
+    text-decoration: underline;
+}
+
+.hwe-project-bullets {
+    margin: 0;
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hwe-project-bullets li {
+    font-family: "Poppins", sans-serif;
+    font-size: 14.5px;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.hwe-project-bullets li::marker {
+    color: #fa5858;
+}
+
+.hwe-detail-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.hwe-dot-pulse {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+    animation: hwe-pulse 2.2s ease-in-out infinite;
+}
+
+@keyframes hwe-pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50%       { transform: scale(1.4); opacity: 0.6; }
+}
+
+.hwe-detail-active-label {
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 500;
+}
+
+/* Desktop only & Mobile accordion toggles */
+.hwe-mobile-accordion {
+    display: none;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media only screen and (max-width: 1024px) {
+    .hwe-container {
+        padding: 0 clamp(24px, 3.5vw, 60px);
+    }
+
+    .hwe-body {
+        grid-template-columns: 280px 1fr;
+        gap: 36px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .home-work-exp {
+        height: auto;
+        padding: 60px 0 60px;
+    }
+
+    .hwe-sticky-track {
+        position: static;
+        height: auto;
+        display: block;
+    }
+
+    .hwe-container {
+        padding: 0 20px;
+    }
+
+    /* Keep 7+ years badge aligned with the title on the same line */
+    .hwe-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 28px;
+        gap: 12px;
+        flex-wrap: nowrap;
+    }
+
+    .hwe-title {
+        font-size: 22px;
+        line-height: 1.15;
+    }
+
+    .hwe-years-badge {
+        padding: 8px 14px;
+        gap: 8px;
+        border-radius: 12px;
+        flex-shrink: 0;
+    }
+
+    .hwe-years-num {
+        font-size: 22px;
+    }
+
+    .hwe-years-label {
+        font-size: 10.5px;
+        line-height: 1.2;
+    }
+
+    /* Hide the disconnected desktop tabs on mobile */
+    .hwe-desktop-only {
+        display: none;
+    }
+
+    /* ── Connected Interactive In-Place Timeline Cards for Mobile ── */
+    .hwe-mobile-accordion {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .hwe-acc-item {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        overflow: hidden;
+        transition: all 0.25s ease;
+    }
+
+    .hwe-acc-item--open {
+        background: rgba(255, 255, 255, 0.06);
+        border-color: rgba(255, 255, 255, 0.18);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .hwe-acc-header {
+        display: flex;
+        align-items: center;
+        padding: 16px 18px;
+        cursor: pointer;
+        gap: 14px;
+        user-select: none;
+    }
+
+    .hwe-acc-indicator {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 14px;
+        flex-shrink: 0;
+    }
+
+    .hwe-acc-dot {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        display: block;
+        box-shadow: 0 0 10px var(--dot);
+    }
+
+    .hwe-acc-title-wrap {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .hwe-acc-top-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 8px;
+        margin-bottom: 3px;
+    }
+
+    .hwe-acc-role {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        color: #ffffff;
+        margin: 0;
+        letter-spacing: -0.01em;
+    }
+
+    .hwe-acc-period {
+        font-family: 'Poppins', sans-serif;
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.4);
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .hwe-acc-meta {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .hwe-acc-company {
+        font-family: 'Poppins', sans-serif;
+        font-size: 12.5px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .hwe-acc-current-badge {
+        font-family: 'Poppins', sans-serif;
+        font-size: 9.5px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: #4ade80;
+        background: rgba(74, 222, 128, 0.12);
+        border: 1px solid rgba(74, 222, 128, 0.3);
+        padding: 2px 7px;
+        border-radius: 100px;
+    }
+
+    .hwe-acc-toggle-icon {
+        color: rgba(255, 255, 255, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        transition: transform 0.25s ease, color 0.25s ease;
+    }
+
+    .hwe-acc-item--open .hwe-acc-toggle-icon {
+        color: #ffffff;
+    }
+
+    /* Expandable body */
+    .hwe-acc-body {
+        padding: 0 18px 18px 46px;
+        animation: pp-fade-in 0.25s ease;
+    }
+
+    .hwe-acc-desc {
+        font-family: 'Poppins', sans-serif;
+        font-size: 13.5px;
+        line-height: 1.75;
+        color: rgba(255, 255, 255, 0.65);
+        margin: 0 0 14px 0;
+    }
+
+    .hwe-acc-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 11px;
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+        padding-top: 10px;
+    }
+
+    .hwe-acc-location {
+        color: rgba(255, 255, 255, 0.4);
+    }
+
+    .hwe-acc-status {
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hwe-title {
+        font-size: 20px;
+    }
+
+    .hwe-years-num {
+        font-size: 20px;
+    }
+
+    .hwe-acc-body {
+        padding-left: 20px;
+    }
+}

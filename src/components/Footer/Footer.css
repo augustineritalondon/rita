@@ -1,70 +1,335 @@
-/* CONTACT ME */
-.contact{
-    padding-top: 250px;
-    text-align: center;
+/* ============================================================
+   BINJAN-STYLE FOOTER / CONTACT SECTION
+   Preserves dark theme & background vector shapes
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Montserrat:wght@600;700;800;900&family=Poppins:wght@400;500;600&display=swap");
+
+.binjan-footer {
     position: relative;
-}
-
-.contact .contact_shape{
-    background-image: url(../../assets/images/Group35.png);
+    background: transparent;
+    padding: 100px 0 60px;
     width: 100%;
-    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+/* ── Vector shape background preserved ── */
+.binjan-footer .footer-vector-shape {
+    background-image: url(../../assets/images/Group35.png);
+    width: 480px;
+    height: 480px;
     background-repeat: no-repeat;
-    /* background-size: cover; */
+    background-size: contain;
     position: absolute;
-    z-index: -1;
+    top: 20px;
+    left: -80px;
+    opacity: 0.18;
+    pointer-events: none;
+    z-index: 0;
 }
 
-.contact p{
-    color: #fff;
+.bf-container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 clamp(24px, 4vw, 70px);
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
 }
 
-.contact .contact-details p{
-    padding: 0;
-    margin: 0;
-    font-size: 20px;
+/* ── 2-Column Main Grid ── */
+.bf-main-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: clamp(30px, 5vw, 80px);
+    align-items: start;
+    padding-bottom: 36px;
 }
 
-.contact .contact-details p a{
-    color: #D5C455;
+/* ═══════════════════════════════════════════════════════
+   LEFT COLUMN: Main CTA
+   ═══════════════════════════════════════════════════════ */
+.bf-cta-col {
+    display: flex;
+    flex-direction: column;
 }
 
-.contact ul{
-    padding: 0;
-    align-self: center;
+.bf-cta-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(34px, 4.4vw, 56px);
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    margin: 0 0 32px 0;
 }
 
-.contact ul li{
-    list-style: none;
-    display: inline;
+.bf-saying-hi {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(22px, 2.6vw, 32px);
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 40px;
 }
 
-.contact ul li i{
-    font-size: 12px;
-    color: #C4C4C4;
-    border: 1px solid #C4C4C4;
-    border-radius: 50%;
-    padding: 10px;
-    margin-right: 20px;
+.bf-saying-text {
+    color: rgba(255, 255, 255, 0.9);
 }
 
-.contact ul li .facebook{
-    padding: 10px 13px;
+.bf-saying-link {
+    color: #4ade80;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2.5px;
+    transition: color 0.25s ease, opacity 0.25s ease, text-shadow 0.25s ease;
 }
 
-/* FOOTER */
-footer{
-    text-align: center;
-    padding-top: 180px;
-}
-
-footer hr{
-    height: 2px!important;
-    color: rgba(255, 255, 255, 0.6);
+.bf-saying-link:hover {
+    color: #86efac;
+    text-shadow: 0 0 16px rgba(74, 222, 128, 0.45);
     opacity: 1;
 }
 
-footer p{
+/* Direct Contact items */
+.bf-direct-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.bf-contact-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 0.25s ease, transform 0.2s ease;
+}
+
+.bf-contact-item:hover {
+    color: #ffffff;
+    transform: translateX(4px);
+    text-decoration: none;
+}
+
+.bf-contact-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    flex-shrink: 0;
+}
+
+/* ═══════════════════════════════════════════════════════
+   RIGHT COLUMN: Information & Links
+   ═══════════════════════════════════════════════════════ */
+.bf-info-col {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.bf-info-block {
+    margin-bottom: 36px;
+}
+
+.bf-info-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 12px 0;
+    letter-spacing: -0.01em;
+}
+
+.bf-info-address {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14.5px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.45);
+    margin: 0;
+}
+
+/* Nav Links - Reference style */
+.bf-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 38px;
+}
+
+/* Capsule pill for "SERVICES" like reference */
+.bf-nav-pill {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.85);
+    border: 1.5px solid rgba(255, 255, 255, 0.35);
+    border-radius: 100px;
+    padding: 6px 18px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.bf-nav-pill:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+    text-decoration: none;
+}
+
+.bf-nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.45);
+    text-decoration: none;
+    transition: color 0.25s ease, transform 0.2s ease;
+    padding-left: 2px;
+}
+
+.bf-nav-link:hover {
+    color: #ffffff;
+    transform: translateX(3px);
+    text-decoration: none;
+}
+
+/* Social icons */
+.bf-socials {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.bf-socials a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.65);
     font-size: 14px;
-    color: #fff;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.bf-socials a:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    transform: translateY(-3px);
+    text-decoration: none;
+}
+
+/* ═══════════════════════════════════════════════════════
+   BOTTOM BAR: Signature & Copyright
+   ═══════════════════════════════════════════════════════ */
+.bf-bottom-bar {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bf-brand-sign {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bf-signature {
+    font-family: 'Caveat', cursive;
+    font-size: 38px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1;
+    letter-spacing: 0.5px;
+}
+
+.bf-copyright {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
+    padding-left: 18px;
+}
+
+.bf-credit {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.bf-heart {
+    color: #4ade80;
+    margin: 0 3px;
+    font-size: 11px;
+}
+
+/* ── Responsive ── */
+@media only screen and (max-width: 900px) {
+    .binjan-footer {
+        padding: 90px 0 40px;
+    }
+
+    .bf-main-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        padding-bottom: 60px;
+    }
+
+    .bf-cta-heading {
+        font-size: 36px;
+    }
+
+    .bf-bottom-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .bf-cta-heading {
+        font-size: 30px;
+    }
+
+    .bf-saying-hi {
+        font-size: 22px;
+    }
+
+    .bf-brand-sign {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .bf-copyright {
+        border-left: none;
+        padding-left: 0;
+    }
 }

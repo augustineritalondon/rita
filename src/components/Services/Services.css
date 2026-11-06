@@ -1,5 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600&display=swap");
+
+/* ============================================================
+   SERVICES SECTION — Transparent to show project's fixed background
+   ============================================================ */
+
+.services-section {
+  position: relative;
+  background: transparent;
+  padding: 80px 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.services-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 clamp(28px, 4vw, 70px);
+  display: grid;
+  grid-template-columns: minmax(400px, 460px) 1fr;
+  column-gap: clamp(44px, 5.5vw, 80px);
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------
+   LEFT COLUMN: Stacked Service Cards
+   ------------------------------------------------------------ */
+
+.services-cards-col {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+}
+
+.service-card {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 28px 34px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: default;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+}
+
+.service-card-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.service-live-icon {
+  width: 62px;
+  height: 62px;
+  object-fit: contain;
+  mix-blend-mode: lighten;
+  filter: brightness(1.1) contrast(1.1) saturate(1.2) drop-shadow(0 6px 14px rgba(0,0,0,0.5));
+  animation: service-float 3s ease-in-out infinite;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.service-card:hover .service-live-icon {
+  transform: scale(1.12);
+  filter: brightness(1.2) contrast(1.15) saturate(1.4) drop-shadow(0 10px 20px rgba(255,255,255,0.15));
+}
+
+@keyframes service-float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+
+.service-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-card-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 5px 0;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.service-card-projects {
+  font-family: "Poppins", sans-serif;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: #8c8c8c;
+  margin: 0;
+  line-height: 1;
+}
+
+/* ------------------------------------------------------------
+   RIGHT COLUMN: "What do I help?" & Stats
+   ------------------------------------------------------------ */
+
+.services-info-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(34px, 4.4vw, 52px);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  margin: 0 0 24px 0;
+  letter-spacing: -0.02em;
+}
+
+.services-desc {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.85;
+  color: #8c8c8c;
+  margin: 0 0 16px 0;
+  max-width: 530px;
+}
+
+.services-desc:last-of-type {
+  margin-bottom: 0;
+}
+
+.services-stats-row {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(40px, 6vw, 75px);
+  margin-top: 36px;
+  padding-top: 6px;
+}
+
+.services-stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-stat-number {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(38px, 4.4vw, 52px);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: baseline;
+}
+
+.services-stat-number span {
+  color: #ffffff;
+  margin-left: 2px;
+}
+
+.services-stat-label {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #8c8c8c;
+  margin: 0;
+  line-height: 1.25;
+}
+
+/* ------------------------------------------------------------
+   RESPONSIVE BREAKPOINTS
+   ------------------------------------------------------------ */
+
+@media only screen and (max-width: 1080px) {
+  .services-container {
+    grid-template-columns: minmax(360px, 420px) 1fr;
+    column-gap: 48px;
+    padding: 0 clamp(24px, 3vw, 60px);
+  }
+
+  .service-card {
+    padding: 20px 22px;
+    border-radius: 18px;
+    gap: 18px;
+  }
+
+  .service-card-title {
+    font-size: 19px;
+  }
+}
+
 @media only screen and (max-width: 991px) {
-    .serv{
-        padding-top: 80px;
-    }
+  .services-section {
+    padding: 70px 0;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services-info-col {
+    max-width: 520px;
+    margin: 0 auto;
+    width: 100%;
+    order: 1;
+  }
+
+  .services-cards-col {
+    max-width: 520px;
+    margin: 0 auto;
+    width: 100%;
+    order: 2;
+  }
+
+  .services-heading {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+
+  .services-desc {
+    font-size: 15.5px;
+  }
+
+  .services-stats-row {
+    gap: 45px;
+    margin-top: 28px;
+  }
+
+  .services-stat-number {
+    font-size: 44px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .services-section {
+    padding: 50px 0;
+  }
+
+  .services-container {
+    padding: 0 18px;
+    row-gap: 40px;
+  }
+
+  .services-cards-col {
+    gap: 16px;
+  }
+
+  .service-card {
+    padding: 16px 18px;
+    border-radius: 16px;
+    gap: 16px;
+  }
+
+  .service-card-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .service-card-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .service-card-title {
+    font-size: 17.5px;
+  }
+
+  .service-card-projects {
+    font-size: 13.5px;
+  }
+
+  .services-heading {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+
+  .services-desc {
+    font-size: 14.5px;
+    line-height: 1.75;
+  }
+
+  .services-stats-row {
+    gap: 32px;
+    margin-top: 24px;
+  }
+
+  .services-stat-number {
+    font-size: 36px;
+  }
+
+  .services-stat-label {
+    font-size: 13.5px;
+  }
 }
