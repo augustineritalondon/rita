@@ -225,6 +225,9 @@ const HomeWorkExperience = () => {
 
     return (
         <section className="home-work-exp" id="experience" ref={sectionRef}>
+            {/* LifeSkills Anchor for direct scrolling */}
+            <div id="lifeskills-connect" style={{ position: 'absolute', top: 0, left: 0, width: 0, height: 0, pointerEvents: 'none', visibility: 'hidden' }} />
+
             {/* Pinned frame: stays fixed to screen during the scroll runway */}
             <div className="hwe-sticky-track">
                 <div className="hwe-container">

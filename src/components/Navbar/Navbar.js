@@ -16,7 +16,7 @@ const Navbar = () => {
                 <div className='r-container'>
                     <div className='navbar-inner'>
                         <div className='navbar-brand'>
-                            <span className='navbar-brand-text'>My Portfolio</span>
+                            <span className='navbar-brand-text'>Rita.dev</span>
                         </div>
                         <ul className='navbar-links'>
                             <li><NavLink exact to="/" activeClassName="active">About</NavLink></li>

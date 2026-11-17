@@ -172,6 +172,99 @@
   }
 }
 
+/* ---- Direct Action Buttons for Recruiters ---- */
+.hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.hero-btn {
+  font-family: "Montserrat", sans-serif;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+}
+
+/* Primary Button: Solid Bright Emerald with sleek glow */
+.hero-btn--primary {
+  background: #4ade80;
+  color: #05140a !important;
+  border: 1px solid #4ade80;
+  box-shadow: 0 4px 20px rgba(74, 222, 128, 0.35);
+}
+
+.hero-btn--primary:hover {
+  background: #22c55e;
+  border-color: #22c55e;
+  color: #030d06 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(74, 222, 128, 0.5);
+  text-decoration: none;
+}
+
+.hero-btn--primary svg {
+  transition: transform 0.25s ease;
+}
+
+.hero-btn--primary:hover svg {
+  transform: translateY(2px);
+}
+
+/* Secondary Button: Clean Modern Glass Outline */
+.hero-btn--secondary {
+  background: rgba(255, 255, 255, 0.04);
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.hero-btn--secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.6);
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.08);
+  text-decoration: none;
+}
+
+.hero-btn--secondary svg {
+  transition: transform 0.25s ease;
+}
+
+.hero-btn--secondary:hover svg {
+  transform: translateX(3px);
+}
+
+/* Resume Pill: Subtle Icon Button */
+.hero-btn--resume {
+  background: rgba(255, 255, 255, 0.02);
+  color: rgba(255, 255, 255, 0.75) !important;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 12px 18px;
+}
+
+.hero-btn--resume:hover {
+  background: rgba(74, 222, 128, 0.08);
+  border-color: rgba(74, 222, 128, 0.5);
+  color: #4ade80 !important;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
 /* RIGHT: portrait — bigger, positioned comfortably in right-center away from far right edge */
 .hero-portrait {
   flex: 0 0 54%;
@@ -493,6 +586,11 @@
     margin: 0 auto;
   }
 
+  .hero-actions {
+    justify-content: center;
+    margin: 20px auto 28px;
+  }
+
   /* PORTRAIT FOLLOWS TEXT */
   .hero-portrait {
     flex: 0 0 auto;
@@ -607,6 +705,20 @@
     padding: 7px 18px;
     font-size: 10px;
     letter-spacing: 2px;
+  }
+
+  .hero-actions {
+    gap: 8px;
+    margin: 16px auto 22px;
+  }
+
+  .hero-btn {
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+
+  .hero-btn--resume {
+    padding: 10px 14px;
   }
 
   .hero-portrait {
